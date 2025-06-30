@@ -1,37 +1,82 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Goal Group of Trust</title>
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apply Online Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+        padding: 20px;
+    }
+    .form-container {
+        background: white;
+        max-width: 500px;
+        margin: auto;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin-top: 10px;
+    }
+    input, textarea, select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+    button {
+        margin-top: 15px;
+        width: 100%;
+        padding: 10px;
+        background: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #0056b3;
+    }
+</style>
 </head>
 <body>
-  <header>
-    <h1>Goal Group of Trust</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="hero">
-      <h2>Welcome to Goal Group of Trust</h2>
-      <p>We work for education, environment protection & women empowerment.</p>
-    </section>
-    <section>
-      <h3>Our Mission</h3>
-      <p>Creating a better society through sustainable projects and community initiatives.</p>
-    </section>
-  </main>
-  <footer>
-    <p>© 2025 Goal Group of Trust | Email: goalgroupoftrust@gmail.com | Phone: 9508477571</p>
-  </footer>
+
+<div class="form-container">
+    <h2>Apply Online</h2>
+    <form action="https://your-server-side-script.com/submit" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Mobile Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="position">Position Applying For:</label>
+        <select id="position" name="position" required>
+            <option value="">Select</option>
+            <option value="volunteer">Volunteer</option>
+            <option value="teacher">Teacher</option>
+            <option value="staff">Staff</option>
+        </select>
+
+        <label for="message">Why do you want to join?</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
+
 </body>
 </html>
